@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Pricing Panel</title>
+    
+    <style>
+        body {
+            font-family: system-ui;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #3D0301, #60495A);
+            margin: 0;
+            
+        }
+        .pricing-container {
+            display: flex;
+            flex-direction: row;
+            gap: 22px;
+            max-width: 980px;
+            width: 100vw;
+            padding: 20px;
+        }
+        .pricing-plan {
+            flex: 1;
+            padding: 20px;
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+        }
+        .pricing-plan{
+            background: linear-gradient(135deg, #EBE8DB, #D76C82);
+        }
+        .pricing-plan:nth-child(even) {
+            background: linear-gradient(135deg, #D76C82, #EBE8DB);
+        }
+        
+        
+        .pricing-plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+        }
+        .pricing-plan img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
+        .pricing-tabs {
+            margin-top: 10px;
+            text-align: center;
+            list-style: none;
+            padding: 0;
+        }
+        .pricing-tabs li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 8px 0;
+            font-size: 16px;
+            color: #3D0301;
+            font-weight: bold;
+        }
+        .pricing-tabs li {
+            color: #B03052;
+            font-weight: bold;
+        }
+        .pricing-button {
+            display: inline-block;
+            border: none;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: #3D0301;
+            color: #EBE8DB;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background 0.3s ease, transform 0.1s ease;
+        }
+        .pricing-button:hover {
+            background: #B03052;
+            transform: scale(1);
+
+        }
+        @media (max-width: 800px) {
+            .pricing-container {
+                flex-direction: column;
+                /* used this to have full view*/
+                height: 100%;
+            
+            }
+
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-plan">
+            <img src="/1stClass/3894385.jpg" alt="Basic Plan">
+            <h2>Basic</h2>
+            <p><b>$10/month</b></p>
+            <ul class="pricing-tabs">
+                <li>✅ 10GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 Support</li>
+            </ul>
+            <button class="pricing-button">Choose Plan</button>
+        </div>
+        <div class="pricing-plan">
+            <img src="/1stClass/3304452.jpg" alt="Standard Plan">
+            <h2>Standard</h2>
+            <p><b>$20/month</b></p>
+            <ul class="pricing-tabs">
+                <li>✅ 50GB Storage</li>
+                <li>✅ 5 Users</li>
+                <li>✅ Phone &amp; Email Support</li>
+            </ul>
+            <button class="pricing-button">Choose Plan</button>
+        </div>
+        <div class="pricing-plan">
+            <img src="/1stClass/6781265.jpg" alt="Premium Plan">
+            <h2>Premium</h2>
+            <p><b>$30/month</b></p>
+            <ul class="pricing-tabs">
+                <li>✅ 100GB Storage</li>
+                <li>✅ 10 Users</li>
+                <li>✅ 24/7 Support</li>
+    
+            </ul>
+            <button class="pricing-button">Choose Plan</button>
+        </div>
+    </div>
+</body>
+</html>
